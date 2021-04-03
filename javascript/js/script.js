@@ -64,15 +64,19 @@ var barData = document.getElementById('formControlRange')
 var barPrice = document.querySelector('.rangenum')
 
 barData.addEventListener('mousemove', function () {
-    secondPrice = parseInt(barData.value) * 10
-    barPrice.innerHTML = secondPrice
-    showPrice ()
+    range()
+})
+barData.addEventListener('touchstart', function () {
+    range()
 })
 barData.addEventListener('touchmove', function () {
+    range()
+})
+function range(){
     secondPrice = parseInt(barData.value) * 10
     barPrice.innerHTML = secondPrice
     showPrice ()
-})
+}
 var select = document.getElementById('inlineFormCustomSelectPref')
 select.addEventListener('change', function () {
     thirdPrice = parseInt(select.value)
