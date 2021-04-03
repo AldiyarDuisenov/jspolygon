@@ -68,7 +68,7 @@ barData.addEventListener('mousemove', function () {
     barPrice.innerHTML = secondPrice
     showPrice ()
 })
-    barData.addEventListener('click', function () {
+    barData.addEventListener('touchmove', function () {
     secondPrice = parseInt(barData.value) * 10
     barPrice.innerHTML = secondPrice
     showPrice ()
