@@ -63,10 +63,10 @@ function colorize(item){
 var barData = document.getElementById('formControlRange')
 var barPrice = document.querySelector('.rangenum')
 
-barData.addEventListener('mousemove', function () {
+barData.addEventListener('change', function () {
     range()
 })
-barData.addEventListener('touchstart', function () {
+barData.addEventListener('mousemove', function () {
     range()
 })
 barData.addEventListener('touchmove', function () {
