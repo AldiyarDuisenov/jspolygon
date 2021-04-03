@@ -68,6 +68,11 @@ barData.addEventListener('mousemove', function () {
     barPrice.innerHTML = secondPrice
     showPrice ()
 })
+    barData.addEventListener('click', function () {
+    secondPrice = parseInt(barData.value) * 10
+    barPrice.innerHTML = secondPrice
+    showPrice ()
+})
 var select = document.getElementById('inlineFormCustomSelectPref')
 select.addEventListener('change', function () {
     thirdPrice = parseInt(select.value)
